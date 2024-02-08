@@ -1,0 +1,57 @@
+.item {
+  position: relative;
+}
+.item img {
+  cursor: pointer;
+}
+.content {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  right: 20px;
+  text-align: center;
+}
+#imgContainer {
+  background-color: #4e4e4e89;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 99;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+#itemimg {
+  background-image: url("../images/portfolio-1.jpg");
+  background-size: 100% 100%;
+  width: 50%;
+  height: 550px;
+  position: relative;
+}
+@media(max-width: 767px){
+  #itemimg {
+    width: 80%;
+    height: 50vh;
+  }
+}
+#itemimg i {
+  font-size: 20px;
+  cursor: pointer;
+}
+#itemimg #prev {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+}
+#itemimg #next {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+}
+#itemimg #close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
